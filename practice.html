@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ </head>
+  <style>
+
+  	*{
+		margin: 0px;
+		padding: 0px; 
+		letter-spacing: normal!important;
+	}
+
+  	
+  	.flex{
+  		   
+  		    margin:15px;
+  	}
+
+  .form-control{
+  	             width: 31%;
+  	             font-size: 9px;
+  }
+
+  
+   .button2{
+   	         width: 31%;
+   	         height: 36px;
+             font-size: 13px
+   }
+
+   .container-input{
+   	              font-size: 9px;       
+   }
+
+   .form2{
+   	        display: flex;
+   	        
+   }
+
+      .form-group1 {
+               margin-bottom: 1.5rem;
+               display: inline-flex;
+               width: 33%;
+               height: 41px;
+     }
+   
+
+   .form-group1 input{
+                   padding: 5px;
+                   width: 95%;
+                   font-size: 9px;
+}
+
+      .submitBtn{
+       width: 93%;
+       border-radius: 0px;
+       margin-bottom: 2rem;
+}
+
+label{
+	       
+	       color:black;
+	       font-size: 9px;
+	       font-weight: 500; 
+	       color:black;
+	       line-height: 1.5;
+}
+
+h6{
+	font-size: 9px;
+	font-weight: 500; 
+	color:black;
+	line-height: 1.5;
+
+
+	}
+
+[type=radio]{
+	          
+              padding: 0;
+              box-sizing: border-box;
+}
+
+.form-check-label{
+	                 margin-left: 23px;
+}
+
+.nav > li.nav-item > a {
+       border-bottom: 3px solid red;
+}
+
+.nav-tabs .nav-link {
+    border: 0;
+}
+
+  </style>
+<body>
+<br>
+
+<div class="container">
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item col-4">
+      <a class="nav-link" data-toggle="tab" href="#home">I KNOW MY SIZE</a>
+    </li>
+    <li class="nav-item col-4">
+      <a class="nav-link" data-toggle="tab" href="#menu1">I DON'T KOW MY SIZE</a>
+    </li>
+    <li class="nav-item col-4">
+      <a class="nav-link" data-toggle="tab" href="#menu2">HOW TO MEASURE</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+     <!--  <div class="first-div">
+      <div>
+        <h6 style="display:inline-flex;">Choose your Units</h6> 
+        <div class="form-check" style="display: inline-flex;">
+          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" style="line-height: 1.15;margin: 0px;">
+          <label class="form-check-label" for="radio1">inches</label>
+        </div>
+        <div class="form-check" style="display: inline-flex;">
+          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" style="line-height: 1.15;margin: 0px;">
+          <label class="form-check-label" for="radio2">cms</label>
+        </div> 
+      </div>
+    </div> -->
+    <br>
+    <label>Tell us your body measurement</label>
+    <div class="row">
+      <div class="col-md-6">
+      	 <div class="first-div">	
+	      <div>
+	        <h6 style="display:inline-flex;">Choose your Units</h6> 
+	        <div class="form-check" style="display: inline-flex;">
+	          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" style="line-height: 1.15;margin: 0px;">
+	          <label class="form-check-label" for="radio1">inches</label>
+	        </div>
+	        <div class="form-check" style="display: inline-flex;">
+	          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" style="line-height: 1.15;margin: 0px;">
+	          <label class="form-check-label" for="radio2">cms</label>
+	        </div> 
+	      </div>
+    	</div>
+        <form class="form-inline">
+          <div class="form-group1">
+            <input type="text" placeholder="shoulder" name="bmeasurement" class="">
+          </div>
+          <div class="form-group1">
+            <input type="text" placeholder="top-length"name="bmeasurement" class="r-m-12">
+          </div>
+          </br>
+          <div class="form-group1">
+            <input type="text" placeholder="Bust"name="bmeasurement"class="">
+          </div>
+          <div class="form-group1">
+            <input type="text" placeholder="bottom-length(with heels)"name="bmeasurement">
+          </div>
+          <div class="form-group1">
+            <input type="text" placeholder="under-bust"name="bmeasurement"class="">
+          </div>
+          <div class="form-group1">
+            <input type="text" placeholder="Kurta Length(with heels)"name="bmeasurement">
+          </div>
+          <div class="form-group1">
+            <input type="text" placeholder="Armhole"name="bmeasurement"class="">
+          </div>
+          <div class="form-group1">
+            <input type="text" placeholder="Front Neck Depth"name="bmeasurement">
+          </div>
+          <div class="form-group1">
+            <input type="text" placeholder="Sleeve Length"name="bmeasurement"class="">
+          </div>
+          <div class="form-group1">
+            <input type="text" placeholder="Back Neck Depth"name="bmeasurement">
+          </div>
+          <div class="form-group1">
+            <input type="text" placeholder="Bicep"name="bmeasurement"class="">
+          </div>
+          <div class="form-group1">
+            <input type="text" placeholder="Crotch Length"name="bmeasurement">
+          </div>
+          <div class="form-group1">
+            <input type="text" placeholder="Elbow"name="bmeasurement"class="">
+          </div>
+          <div class="form-group1">
+            <input type="text" placeholder="Thigh Circumference"name="bmeasurement">
+          </div>
+          <div class="form-group1">
+            <input type="text" placeholder="wrist"name="bmeasurement"class="">
+          </div>
+          <div class="form-group1">
+            <input type="text" placeholder="Knee Circumference"name="bmeasurement">
+          </div>
+          <div class="form-group1">
+            <input type="text" placeholder="waist"name="bmeasurement"class="">
+          </div>
+          <div class="form-group1">
+            <input type="text" placeholder="Calf Circumference"name="bmeasurement"class=""></div>
+          <div class="form-group1">
+            <input type="text" placeholder="Lower waist"name="bmeasurement"></div>
+          <div class="form-group1">
+            <input type="text" placeholder="Ankle Circumference"name="bmeasurement">
+          </div>
+          <div class="form-group1">
+            <input type="text" placeholder="hip"name="bmeasurement">
+          </div>
+        <div class="Contact">
+        <label>Your Contact Details</label>
+        </div>
+          <div class="form-group1">
+            <input type="text" placeholder="Email Address"name="usrn">
+          </div>
+          <div class="form-group1">
+            <input type="password" placeholder="Mobile Number"name="paswrd">
+          </div>
+          <button type="submit" class="btn btn-dark submitBtn" style="width: 65%">Submit</button>
+          </form>
+      </div>
+      <div class=" images col-md-6 align-center justify-center">
+        <img src="img.jpeg" alt="refrence-img">
+      </div>
+    </div>
+    </div>
+   
+   <!-- how to get in touch -->
+
+   <div id="menu1" class="tab-pane fade">
+      <div class="form-group w-30">
+      	<br>
+      	<label style="font-weight: 500; color:black;line-height: 1.5">Tell us how to get in touch with you</label>
+       <form>
+      <input type="text" class="form-control" id="uname" placeholder="Full name" name="uname" required></form>
+    </div>
+    <div class="form-group">
+    	<form>
+      <input type="password" class="form-control" id="Email" placeholder="Email Address" name="Email" required></form>
+    </div>
+    <div class="form-group">
+    	<form>		
+      <input type="password" class="form-control" id="Mnumber" placeholder="Mobile Number" name="Mnumber" required></form>
+
+    </div>
+    <div>
+    	<br>
+        <div>	 
+        <button type="submit" class="btn btn-dark button2">SUBMIT</button>
+        </div>
+    </div>
+
+    </div>
+
+       <!-- How to measure -->
+
+ <div id="menu2" class="tab-pane fade">
+
+ 	<iframe width="90%" height="345" style="margin-top: 50px;" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          	
+          </iframe>
+      
+    </div>
+    </div>
+
+    <!-- <div id="menu2" class="tab-pane fade"><br>
+    	
+          <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          	
+          </iframe> -->
+
+    </div>
+  </div>
+
+</body>
+</html>
